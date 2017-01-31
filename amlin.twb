@@ -346,6 +346,10 @@
             <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0gd6t3v0lorosw1g0dkp91q9ctco].[none:Year:qk]' included-values='all' />
+          <slices>
+            <column>[federated.0gd6t3v0lorosw1g0dkp91q9ctco].[none:Year:qk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style />
@@ -550,6 +554,7 @@
         </edge>
         <edge name='right'>
           <strip size='160'>
+            <card param='[federated.0gd6t3v0lorosw1g0dkp91q9ctco].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
             <card pane-specification-id='0' param='[federated.0gd6t3v0lorosw1g0dkp91q9ctco].[none:Type of organization:nk]' type='color' />
           </strip>
         </edge>
